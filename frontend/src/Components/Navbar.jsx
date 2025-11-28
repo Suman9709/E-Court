@@ -82,7 +82,7 @@ const Navbar = () => {
 
             {
                 open && (
-                    <div className={`md:hidden fixed top-0 right-0 h-full w-64 bg-white/75 shadow-lg z-50 transform transition-transform duration-300 flex flex-col items-center gap-4  p-5 border-b font-semibold ${open ? 'translate-x-0' : '-translate-x-full'}`}>
+                    <div className={`md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 flex flex-col items-center gap-4  p-5 border-b font-semibold ${open ? 'translate-x-0' : '-translate-x-full'}`}>
                         <div className='w-full flex justify-start'>
                             <CloseRoundedIcon
                                 fontSize='large'
