@@ -3,7 +3,7 @@ import { IoCallOutline } from "react-icons/io5";
 
 const AboutPage = () => {
     return (
-        <div className='flex flex-col max-w-screen items-center justify-around h-full md:flex-row gap-4 p-4 md:p-10 bg-gray-200  '>
+        <div className='flex flex-col max-w-screen items-center justify-around h-full md:flex-row gap-4 p-4 md:p-10 bg-gray-200  ' id='About'>
             <div className=' border-black border-4 h-52 w-72 md:h-96 md:w-96 lg:h-[400px] lg:w-[500px] flex justify-center items-center '>
                 <img src="" alt="" />
             </div>

@@ -10,7 +10,7 @@ const ConsultationForm = () => {
         <div
             className="w-full min-h-screen bg-cover bg-center relative flex items-center justify-center p-6 mt-4"
             style={{ backgroundImage: `url(${consultancybg})` }}
-        >
+            id='Contact'>
             {/* Dark overlay */}
             <div className="absolute inset-1 bg-black/30"></div>
 
@@ -24,36 +24,36 @@ const ConsultationForm = () => {
                     </h1>
 
                     <form className="flex flex-col gap-4 text-white">
-                        <ConsultancyInput 
-                            type="text" 
-                            label="Name" 
+                        <ConsultancyInput
+                            type="text"
+                            label="Name"
                             placeholder="Enter your name"
                             value={name}
                             onChange={setName}
-                            
+
                         />
 
-                        <ConsultancyInput 
-                            type="email" 
-                            label="Email" 
+                        <ConsultancyInput
+                            type="email"
+                            label="Email"
                             placeholder="Enter your email"
                         />
 
-                        <ConsultancyInput 
-                            type="text" 
-                            label="Phone" 
+                        <ConsultancyInput
+                            type="text"
+                            label="Phone"
                             placeholder="Enter your phone number"
                         />
 
-                        <ConsultancyInput 
-                            type="text" 
-                            label="Subject" 
+                        <ConsultancyInput
+                            type="text"
+                            label="Subject"
                             placeholder="Enter subject"
                         />
 
-                        <ConsultancyInput 
-                            type="text" 
-                            label="Message" 
+                        <ConsultancyInput
+                            type="text"
+                            label="Message"
                             placeholder="Your message"
                         />
 
@@ -67,9 +67,9 @@ const ConsultationForm = () => {
 
                 {/* RIGHT — IMAGE (Hidden on mobile) */}
                 <div className="hidden md:flex justify-center items-center">
-                    <img 
-                        src="/consultation.png" 
-                        alt="Consultation" 
+                    <img
+                        src="/consultation.png"
+                        alt="Consultation"
                         className="w-[80%] object-contain drop-shadow-lg"
                     />
                 </div>

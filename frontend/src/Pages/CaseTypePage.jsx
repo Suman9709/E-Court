@@ -4,7 +4,7 @@ import casebg from '/law2.png'
 
 const CaseTypePage = () => {
     return (
-        <div className="relative w-full min-h-screen flex items-center justify-center mt-4 mb-4">
+        <div className="relative w-full min-h-screen flex items-center justify-center mt-4 mb-4" id="Service">
 
             {/* Blurred Background */}
             <div

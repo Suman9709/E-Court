@@ -10,7 +10,7 @@ const Footer = () => {
 
                 {/* Left: Branding */}
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-xl font-semibold">E-Court</h2>
+                    <h2 className="text-xl font-semibold">Advocate Vishwajeet Singh</h2>
                     <p className="text-gray-400 text-sm leading-relaxed">
                         Your trusted legal guidance platform for all case types,
                         consultancy, and justice-related support.

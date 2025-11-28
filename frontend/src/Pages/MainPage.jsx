@@ -7,7 +7,7 @@ import Experience from './Experience'
 
 const MainPage = () => {
     return (
-        <div>
+        <div className='mt-16'>
             <HomePage />
             <AboutPage />
             <Experience />
