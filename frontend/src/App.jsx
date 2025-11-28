@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import LoginPage from './Pages/LoginPage'
 import MainPage from './Pages/MainPage'
+import AdminPanel from './Pages/AdminPanel'
+import NewCaseForm from './Pages/NewCaseForm'
 
 
 
@@ -19,6 +21,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/login",
         element: <LoginPage />
+      },
+      {
+        path:"/adminpanel",
+        element:<AdminPanel/>
+      },
+      {
+         path:"/addnewcase",
+        element:<NewCaseForm/>
       }
     ]
   }

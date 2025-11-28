@@ -25,7 +25,8 @@ const HomePage = () => {
                     </h1>
 
                     <p className="mt-4 text-gray-200 text-sm sm:text-base hidden md:block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                         Your trusted legal guidance platform for all case types,
+                        consultancy, and justice-related support.
                     </p>
                 </div>
 

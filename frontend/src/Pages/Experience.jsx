@@ -1,7 +1,14 @@
 import React from 'react'
-import { GoLaw } from "react-icons/go";
+import { FaBalanceScale, FaUsers, FaHistory, FaAward } from "react-icons/fa";
 
 const Experience = () => {
+    const stats = [
+        { number: "1500+", label: "Successful Cases", icon: <FaBalanceScale size={40} className="text-blue-400" /> },
+        { number: "1200+", label: "Happy Clients", icon: <FaUsers size={40} className="text-blue-400" /> },
+        { number: "22+", label: "Years Experience", icon: <FaHistory size={40} className="text-blue-400" /> },
+        { number: "50+", label: "Awards Won", icon: <FaAward size={40} className="text-blue-400" /> },
+    ];
+
     return (
         <div className='px-4 py-12 bg-[#0B1226] text-white'>
 
@@ -16,14 +23,7 @@ const Experience = () => {
             </div>
 
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-
-                {/* Card */}
-                {[
-                    { number: "1500+", label: "Successful Cases" },
-                    { number: "1200+", label: "Happy Clients" },
-                    { number: "22+", label: "Years Experience" },
-                    { number: "50+", label: "Awards Won" },
-                ].map((item, index) => (
+                {stats.map((item, index) => (
                     <div
                         key={index}
                         className='group p-6 rounded-xl bg-[#0F1A33] border border-gray-700 hover:border-blue-500
@@ -32,7 +32,7 @@ const Experience = () => {
                     >
                         <div className='flex items-center justify-center mb-4'>
                             <div className='p-3 rounded-full bg-blue-500/20 group-hover:bg-blue-500/30 transition'>
-                                <GoLaw size={40} className='text-blue-400' />
+                                {item.icon}
                             </div>
                         </div>
 
@@ -40,7 +40,6 @@ const Experience = () => {
                         <p className='text-center text-gray-300'>{item.label}</p>
                     </div>
                 ))}
-
             </div>
         </div>
     )
